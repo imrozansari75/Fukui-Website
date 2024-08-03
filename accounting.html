@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="output.css">
+    <title>Accounting and Finance</title>
+</head>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="./index.html" class="nav__logo">
+                    <img class="w-[8rem] sm:w-[9rem]" src="./assets/img/FATIPL Logo - Visheshh Jatiaa.jpg" alt="">
+                </a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-fill nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="./index.html" class="nav__link">Home</a></li>
+
+                    <li><a href="./index.html#about-container" class="nav__link">About Us</a></li>
+
+                    <!--=============== DROPDOWN ===============-->
+                    <li class="dropdown__item">
+                        <a href="#services">
+                            <div class="nav__link">
+                                Services <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+                        </a>
+                        <ul class="dropdown__menu sm:w-[12rem]">
+                            <li class="dropdown__subitem ">
+                                <a href="./accounting.html">
+                                    <div class="dropdown__link">
+                                        <img src="./assets/img/accounts.png" class="w-8 object-contain"
+                                            alt="Accounting">
+                                        Account and Finance
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="dropdown__subitem">
+                                <a href="./supplychain.html">
+                                    <div class="dropdown__link">
+                                        <img src="./assets/img/supply-chain.png" class="w-8 object-contain"
+                                            alt="Supply Chain Management Services">
+                                        Supply Chain Management
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="dropdown__subitem">
+                                <a href="./procurement.html">
+                                    <div class="dropdown__link">
+                                        <img src="./assets/img/procurement.png" class="w-8 object-contain"
+                                            alt="Administrative Services">
+                                        Procurement Solutions
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="dropdown__subitem">
+                                <a href="./itanderp.html">
+                                    <div class="dropdown__link">
+                                        <img src="./assets/img/computer.png" class="w-8 object-contain"
+                                            alt="IT Services">
+                                        IT and ERP Services
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="dropdown__subitem">
+                                <a href="./hr&admin.html">
+                                    <div class="dropdown__link">
+                                        <img src="./assets/img/organization-structure.png"
+                                            class="w-8 object-contain" alt="Human Resource Management">
+                                        HR and Administrative Services
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="dropdown__subitem">
+                                <a href="./legalandcompliance.html">
+                                    <div class="dropdown__link">
+                                        <img src="./assets/img/legal-system.png" class="w-8 object-contain"
+                                            alt="Compliance">
+                                        Legal and Compliance Services
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!--=============== DROPDOWN END ===============-->
+
+                    <li class="dropdown__item">
+                        <a href="./index.html#careers">
+                            <div class="nav__link">
+                                Careers
+                            </div>
+                        </a>
+                    </li>
+
+                    <li><a href="./index.html#cta" class="nav__link">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!--==== Hero Section ===-->
+        <section id="hero-container"
+            class="max-w-6xl mx-auto mt-4 px-6 pt-8 pb-20 flex flex-col sm:items-center sm:text-center sm:pt-12">
+            <div class="sm:mt-12">
+                <h1
+                    class="text-3xl font-semibold leading-snug md:my-auto text-center sm:text-6xl sm:leading-tight text-black">
+                    Accounting and Finance</h1>
+                <p class="text-xl mt-4 sm:text-2xl text-center sm:mt-6 text-gray-800">We offer comprehensive accounting
+                    and finance services designed to meet the diverse needs of our clients and enhance their financial
+                    stability and growth. Our services are designed to provide robust financial reports enabling
+                    businesses to focus on their core operations while we manage their books of accounts and monitor the
+                    financials.
+                </p>
+            </div>
+            <div id="button-container" class="mt-12 flex flex-1 flex-wrap gap-4 flex-col sm:flex-row">
+                <a href="#accountingServices" class="hero-btn">Accounting Services</a>
+                <a href="#taxationServices" class="hero-btn">Taxation Services</a>
+                <a href="#financeServices" class="hero-btn">Financial Management Services</a>
+                <a href="#insuranceServices" class="hero-btn">Insurance Services</a>
+            </div>
+        </section>
+
+        <!-- Accounting Services -->
+        <section id="accountingServices"
+            class="w-full mx-auto px-6 sm:px-16 pt-16 mt-4 pb-5 sm:pt-28 sm:pb-12 flex flex-col lg:flex-row gap-8 sm:gap-20 justify-between items-center">
+            <div class="lg:w-1/2 w-full mb-0 sm:mb-10 lg:mb-0">
+                <h2 class="text-3xl sm:text-5xl text-left font-semibold pb-2 sm:pb-10">Accounting Services</h2>
+                <p class="text-xl sm:text-2xl text-left leading-relaxed sm:leading-loose">
+                    Our accounting services provide meticulous financial record-keeping and reporting to ensure accuracy
+                    and compliance with regulatory standards. We handle everything from bookkeeping to financial
+                    statement preparation, enabling our clients to maintain transparency and make informed business
+                    decisions.
+                </p>
+            </div>
+            <div class="lg:w-1/2 w-full flex justify-center items-center">
+                <img src="https://cdn.pixabay.com/photo/2014/07/06/13/55/calculator-385506_1280.jpg"
+                    alt="Accounting Services" class="object-cover">
+            </div>
+        </section>
+
+        <!-- Taxation Services -->
+        <section id="taxationServices"
+            class="w-full mx-auto px-6 sm:px-16 pt-16 sm:pt-28 sm:pb-12 flex flex-col lg:flex-row lg:flex-row-reverse sm:gap-20 justify-between items-center">
+            <div class="lg:w-1/2 w-full mb-6 sm:mb-10 lg:mb-0">
+                <h2 class="text-3xl sm:text-5xl text-left font-semibold pb-2 sm:pb-10">Taxation Services</h2>
+                <p class="text-xl sm:text-2xl text-left leading-relaxed sm:leading-loose">
+                    Navigating the complexities of taxation is made easy with our expert taxation services. We offer
+                    strategic tax planning, compliance, and advisory services to minimize tax liabilities and maximize
+                    savings. Our team stays updated with the latest tax laws and regulations to provide timely and
+                    accurate guidance and also handle any tax litigations or scrutiny matters.
+                </p>
+            </div>
+            <div class="lg:w-1/2 w-full flex justify-center items-center">
+                <img src="https://i.pinimg.com/564x/5b/3d/1b/5b3d1b45d1b3f29455cae2b44945be79.jpg"
+                    alt="Taxation Services" class="object-cover">
+            </div>
+        </section>
+
+        <!-- Financial Management Services -->
+        <section id="financeServices"
+            class="w-full mx-auto px-6 sm:px-16 pt-16 sm:pt-28 sm:pb-12 flex flex-col lg:flex-row sm:gap-20 justify-between items-center">
+            <div class="lg:w-1/2 w-full mb-10 lg:mb-0">
+                <h2 class="text-3xl sm:text-5xl text-left font-semibold pb-2 sm:pb-10">Financial Management Services
+                </h2>
+                <p class="text-xl sm:text-2xl text-left leading-relaxed sm:leading-loose">
+                    We help businesses optimize their financial performance through our financial management services.
+                    Our offerings include budgeting, forecasting, cash flow management, and financial analysis. By
+                    providing insightful financial advice and support, we assist clients in achieving their financial
+                    goals and driving sustainable growth.
+                </p>
+            </div>
+            <div class="lg:w-1/2 w-full flex justify-center items-center">
+                <img src="https://i.pinimg.com/564x/72/81/56/728156950258b7b67c1ac08314f2fd15.jpg"
+                    alt="Financial Management Services" class="object-cover">
+            </div>
+        </section>
+
+        <!-- Insurance Management Services -->
+        <section id="insuranceServices"
+            class="w-full mx-auto px-6 sm:px-16 pt-16 sm:pt-28 sm:pb-12 flex flex-col lg:flex-row lg:flex-row-reverse sm:gap-20 justify-between items-center">
+            <div class="lg:w-1/2 w-full mb-10 lg:mb-0">
+                <h2 class="text-3xl sm:text-5xl text-left font-semibold pb-2 sm:pb-10">Insurance Management Services
+                </h2>
+                <p class="text-xl sm:text-2xl text-left leading-relaxed sm:leading-loose">
+                    Protecting businesses from potential risks is a priority with our insurance management services. We
+                    offer comprehensive risk assessment and tailored insurance solutions to safeguard assets and
+                    operations. Our experienced team ensure your business is covered under a range of insurance need,
+                    ensuring our clients are well-prepared for any eventuality.
+                </p>
+            </div>
+            <div class="lg:w-1/2 w-full flex justify-center items-center mb-10">
+                <img src="https://i.pinimg.com/564x/b9/93/44/b99344560254d852e194c85c27c58ed9.jpg"
+                    alt="Insurance Management Services" class="object-cover">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

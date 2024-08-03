@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="output.css">
+    <title>Legal and Compliance Services</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--=============== HEADER ===============-->
+    
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="./index.html" class="nav__logo">
+                    <img class="w-[8rem] sm:w-[9rem]" src="./assets/img/FATIPL Logo - Visheshh Jatiaa.jpg" alt="">
+                </a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-fill nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="./index.html" class="nav__link">Home</a></li>
+
+                    <li><a href="./index.html#about-container" class="nav__link">About Us</a></li>
+
+                    <!--=============== DROPDOWN ===============-->
+                    <li class="dropdown__item">
+                        <a href="#services">
+                            <div class="nav__link">
+                                Services <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+                        </a>
+                        <ul class="dropdown__menu sm:w-[12rem]">
+                            <li class="dropdown__subitem ">
+                                <a href="./accounting.html">
+                                    <div class="dropdown__link">
+                                        <img src="./assets/img/accounts.png" class="w-8 object-contain"
+                                            alt="Accounting">
+                                        Account and Finance
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="dropdown__subitem">
+                                <a href="./supplychain.html">
+                                    <div class="dropdown__link">
+                                        <img src="./assets/img/supply-chain.png" class="w-8 object-contain"
+                                            alt="Supply Chain Management Services">
+                                        Supply Chain Management
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="dropdown__subitem">
+                                <a href="./procurement.html">
+                                    <div class="dropdown__link">
+                                        <img src="./assets/img/procurement.png" class="w-8 object-contain"
+                                            alt="Administrative Services">
+                                        Procurement Solutions
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="dropdown__subitem">
+                                <a href="./itanderp.html">
+                                    <div class="dropdown__link">
+                                        <img src="./assets/img/computer.png" class="w-8 object-contain"
+                                            alt="IT Services">
+                                        IT and ERP Services
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="dropdown__subitem">
+                                <a href="./hr&admin.html">
+                                    <div class="dropdown__link">
+                                        <img src="./assets/img/organization-structure.png"
+                                            class="w-8 object-contain" alt="Human Resource Management">
+                                        HR and Administrative Services
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="dropdown__subitem">
+                                <a href="./legalandcompliance.html">
+                                    <div class="dropdown__link">
+                                        <img src="./assets/img/legal-system.png" class="w-8 object-contain"
+                                            alt="Compliance">
+                                        Legal and Compliance Services
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!--=============== DROPDOWN END ===============-->
+
+                    <li class="dropdown__item">
+                        <a href="./index.html#careers">
+                            <div class="nav__link">
+                                Careers
+                            </div>
+                        </a>
+                    </li>
+
+                    <li><a href="./index.html#cta" class="nav__link">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Main -->
+    <main>
+        <!--==== Hero Section ===-->
+        <section id="hero-container"
+            class="max-w-6xl mx-auto mt-3 px-6 pt-4 pb-20 flex flex-col sm:items-center sm:text-center sm:pt-12">
+            <div class="sm:mt-12 mb-2">
+                <h1
+                    class="text-3xl font-semibold leading-snug md:my-auto text-center sm:text-6xl sm:leading-tight text-black">
+                    Legal and Compliance Services</h1>
+                <p class="text-xl mt-4 sm:text-2xl text-center sm:mt-6 text-gray-800">
+                    Our Legal and compliance services are designed to help businesses navigate the complex regulatory landscape with confidence and ease. We provide comprehensive solutions to ensure your business meets all legal and compliance requirements, safeguarding your reputation and operations. Our Legal and compliance services are designed to provide businesses with the expertise and support needed to operate within the legal framework and maintain a positive reputation. By managing your legal and compliance needs, we enable you to focus on your core business activities with peace of mind.
+                </p>
+            </div>
+            <div id="button-container" class="sm:mt-12 flex flex-wrap gap-2 flex-col sm:flex-row">
+                <a href="#publicRelation" class="hero-btn">Public Relations Services</a>
+                <a href="#secretarialCompliance" class="hero-btn">Company Secretarial Compliance</a>
+                <a href="#lawCompliance" class="hero-btn">Legal Compliance Services</a>
+            </div>
+        </section>
+
+        <!-- Public Relations Services -->
+        <section id="publicRelation"
+            class="w-full mx-auto px-6 sm:px-16 pt-16 mt-4 sm:py-28 flex flex-col lg:flex-row sm:gap-20 justify-between items-center">
+            <div class="lg:w-1/2 w-full mb-10 lg:mb-0">
+                <h2 class="text-3xl sm:text-5xl text-left font-semibold pb-2 sm:pb-10">Public Relations Services</h2>
+                <p class="text-xl sm:text-2xl text-left leading-relaxed sm:leading-loose">
+                    Effective communication is essential for maintaining a positive public image. Our public relations services include media relations, crisis management, and strategic communication planning. We help you build and maintain strong relationships with stakeholders, manage your public image, and communicate your brand effectively.
+                </p>
+            </div>
+            <div class="lg:w-1/2 w-full flex justify-center items-center">
+                <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*Cv1tMEUp1mARDuq-GhO9NQ.jpeg"
+                    alt="Public Relations Services" class="object-cover">
+            </div>
+        </section>
+
+        <!-- Company Secretarial Compliance -->
+        <section id="secretarialCompliance"
+            class="w-full mx-auto px-6 sm:px-16 pt-16 sm:py-28 flex flex-col lg:flex-row lg:flex-row-reverse sm:gap-20 justify-between items-center">
+            <div class="lg:w-1/2 w-full mb-10 lg:mb-0">
+                <h2 class="text-3xl sm:text-5xl text-left font-semibold pb-2 sm:pb-10">Company Secretarial Compliance
+                </h2>
+                <p class="text-xl sm:text-2xl text-left leading-relaxed sm:leading-loose">
+                    Staying compliant with corporate governance and regulatory requirements is crucial for any business. Our services cover all aspects of corporate administration, including maintaining statutory registers, filing annual returns, and ensuring compliance with company law. We provide expert guidance to keep your business in good standing with regulatory authorities.
+                </p>
+            </div>
+            <div class="lg:w-1/2 w-full flex justify-center items-center">
+                <img src="https://i.pinimg.com/564x/4f/c7/dc/4fc7dc657264c2117805fa8f8c55a7ba.jpg"
+                    alt="Company Secretarial Compliance" class="object-cover">
+            </div>
+        </section>
+
+        <!-- Company law compliance services -->
+        <section id="lawCompliance"
+            class="w-full mx-auto px-6 sm:px-16 pt-16 sm:py-28 flex flex-col lg:flex-row sm:gap-20 justify-between items-center">
+            <div class="lg:w-1/2 w-full mb-10 lg:mb-0">
+                <h2 class="text-3xl sm:text-5xl text-left font-semibold pb-2 sm:pb-10">Company Law Compliance Services
+                </h2>
+                <p class="text-xl sm:text-2xl text-left leading-relaxed sm:leading-loose">
+                    Navigating the company law landscape requires specialized knowledge and expertise. Our services ensure that your business adheres to all relevant laws and regulations. We offer comprehensive support, including regulatory audits, policy development, and compliance training. Our goal is to minimize legal risks and ensure that your operations remain compliant with industry standards.
+                </p>
+            </div>
+            <div class="lg:w-1/2 w-full flex justify-center items-center mb-10">
+                <img src="https://i.pinimg.com/564x/6a/33/cc/6a33ccaa34c64a206f41ff1d7642a858.jpg"
+                    alt="Company Law Compliance Services" class="object-cover">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="output.css">
+    <title>HR and Administrative</title>
+</head>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+
+<body>
+
+    <!--=============== HEADER ===============-->
+
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="./index.html" class="nav__logo">
+                    <img class="w-[8rem] sm:w-[9rem]" src="./assets/img/FATIPL Logo - Visheshh Jatiaa.jpg" alt="">
+                </a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-fill nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="./index.html" class="nav__link">Home</a></li>
+
+                    <li><a href="./index.html#about-container" class="nav__link">About Us</a></li>
+
+                    <!--=============== DROPDOWN ===============-->
+                    <li class="dropdown__item">
+                        <a href="#services">
+                            <div class="nav__link">
+                                Services <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+                        </a>
+                        <ul class="dropdown__menu sm:w-[12rem]">
+                            <li class="dropdown__subitem ">
+                                <a href="./accounting.html">
+                                    <div class="dropdown__link">
+                                        <img src="./assets/img/accounts.png" class="w-8 object-contain"
+                                            alt="Accounting">
+                                        Account and Finance
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="dropdown__subitem">
+                                <a href="./supplychain.html">
+                                    <div class="dropdown__link">
+                                        <img src="./assets/img/supply-chain.png" class="w-8 object-contain"
+                                            alt="Supply Chain Management Services">
+                                        Supply Chain Management
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="dropdown__subitem">
+                                <a href="./procurement.html">
+                                    <div class="dropdown__link">
+                                        <img src="./assets/img/procurement.png" class="w-8 object-contain"
+                                            alt="Administrative Services">
+                                        Procurement Solutions
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="dropdown__subitem">
+                                <a href="./itanderp.html">
+                                    <div class="dropdown__link">
+                                        <img src="./assets/img/computer.png" class="w-8 object-contain"
+                                            alt="IT Services">
+                                        IT and ERP Services
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="dropdown__subitem">
+                                <a href="./hr&admin.html">
+                                    <div class="dropdown__link">
+                                        <img src="./assets/img/organization-structure.png" class="w-8 object-contain"
+                                            alt="Human Resource Management">
+                                        HR and Administrative Services
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="dropdown__subitem">
+                                <a href="./legalandcompliance.html">
+                                    <div class="dropdown__link">
+                                        <img src="./assets/img/legal-system.png" class="w-8 object-contain"
+                                            alt="Compliance">
+                                        Legal and Compliance Services
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!--=============== DROPDOWN END ===============-->
+
+                    <li class="dropdown__item">
+                        <a href="./index.html#careers">
+                            <div class="nav__link">
+                                Careers
+                            </div>
+                        </a>
+                    </li>
+
+                    <li><a href="./index.html#cta" class="nav__link">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!--==== Hero Section ===-->
+        <section id="hero-container"
+            class="max-w-6xl mx-auto px-4 pt-2 mt-4 sm:pb-20 flex flex-col sm:items-center sm:text-center sm:pt-12">
+            <div class="sm:mt-12">
+                <h1
+                    class="text-3xl font-semibold leading-snug md:my-auto text-center sm:text-6xl sm:leading-tight text-black">
+                    HR & Administrative Services</h1>
+                <p class="text-xl mt-2 sm:text-2xl sm:text-center mb-4 sm:mt-6 text-gray-800">
+                    Our HR management services are tailored to help businesses cultivate a productive and motivated
+                    workforce, ensuring operational excellence and employee satisfaction. Our services are aimed at
+                    enhancing workforce efficiency and satisfaction, allowing businesses to focus on their strategic
+                    goals while we manage their HR and general office administrative functions with professionalism and
+                    expertise.
+                </p>
+            </div>
+            <div id="button-container" class="sm:mt-12 flex flex-1 gap-4 flex-col sm:flex-row">
+                <a href="#payrollServices" class="hero-btn">Payroll Processing Services</a>
+                <a href="#trainingServices" class="hero-btn">Training Services</a>
+                <a href="#teambuildServices" class="hero-btn">Team Building Activities</a>
+                <a href="#recruitmentServices" class="hero-btn">Recruitment Services</a>
+                <a href="#administrativeServices" class="hero-btn">Administrative Services</a>
+            </div>
+        </section>
+
+        <!-- Payroll Processing Services -->
+        <section id="payrollServices"
+            class="w-full mx-auto px-6 sm:px-16 pt-16 mt-4 sm:py-28 flex flex-col lg:flex-row sm:gap-20 justify-between items-center">
+            <div class="lg:w-1/2 w-full mb-10 lg:mb-0">
+                <h2 class="text-3xl sm:text-5xl text-left font-semibold pb-2 sm:pb-10">Payroll Processing Services</h2>
+                <p class="text-xl sm:text-2xl text-left leading-relaxed sm:leading-loose">
+                    Our payroll processing services streamline and automate the payroll function, ensuring accurate and
+                    timely salary disbursements. We handle payroll calculations, tax deductions, and compliance with
+                    statutory requirements, relieving businesses from the complexities of payroll management.
+                </p>
+            </div>
+            <div class="lg:w-1/2 w-full flex justify-center items-center mt-10">
+                <img src="https://i.pinimg.com/736x/3f/37/60/3f376004097a00339ed99a51b7a4178b.jpg"
+                    alt="Payroll Processing Services" class="object-cover">
+            </div>
+        </section>
+
+        <!-- Training services -->
+        <section id="trainingServices"
+            class="w-full mx-auto px-6 sm:px-16 pt-16 sm:py-28 flex flex-col lg:flex-row lg:flex-row-reverse sm:gap-20 justify-between items-center">
+            <div class="lg:w-1/2 w-full mb-10 lg:mb-0">
+                <h2 class="text-3xl sm:text-5xl text-left font-semibold pb-2 sm:pb-10">Training Services</h2>
+                <p class="text-xl sm:text-2xl text-left leading-relaxed sm:leading-loose">
+                    We offer comprehensive training services designed to enhance the skills and capabilities of
+                    employees. Our training programs cover a wide range of areas, including technical skills, soft
+                    skills, and leadership development, ensuring that employees are well-equipped to meet the demands of
+                    their roles and contribute to the company’s success.
+                </p>
+            </div>
+            <div class="lg:w-1/2 w-full flex justify-center items-center mb-10">
+                <img src="https://i.pinimg.com/564x/d5/fe/26/d5fe262006019542bb962a81da924562.jpg"
+                    alt="Training Services" class="object-cover">
+            </div>
+        </section>
+
+        <!-- Team building activities -->
+        <section id="teambuildServices"
+            class="w-full mx-auto px-6 sm:px-16 pt-16 sm:py-28 flex flex-col lg:flex-row sm:gap-20 justify-between items-center">
+            <div class="lg:w-1/2 w-full mb-10 lg:mb-0">
+                <h2 class="text-3xl sm:text-5xl text-left font-semibold pb-2 sm:pb-10">Team Building Activities
+                </h2>
+                <p class="text-xl sm:text-2xl text-left leading-relaxed sm:leading-loose">
+                    Fostering a collaborative and cohesive work environment is crucial for any organization. Our
+                    team-building activities are designed to improve communication, strengthen relationships, and boost
+                    morale among employees. Through engaging and interactive sessions, we help build stronger, more
+                    effective teams.
+                </p>
+            </div>
+            <div class="lg:w-1/2 w-full flex justify-center items-center mb-10">
+                <img src="https://cdn.pixabay.com/photo/2018/03/10/12/00/teamwork-3213924_1280.jpg"
+                    alt="Team Building Activities" class="object-cover">
+            </div>
+        </section>
+
+        <!-- Recruitment services -->
+        <section id="recruitmentServices"
+            class="w-full mx-auto px-6 sm:px-16 pt-16 sm:py-28 flex flex-col lg:flex-row lg:flex-row-reverse sm:gap-20 justify-between items-center">
+            <div class="lg:w-1/2 w-full mb-10 lg:mb-0">
+                <h2 class="text-3xl sm:text-5xl text-left font-semibold pb-2 sm:pb-10">Recruitment Services</h2>
+                <p class="text-xl sm:text-2xl text-left leading-relaxed sm:leading-loose">
+                    Finding the right talent is essential for any business. Our recruitment services provide end-to-end
+                    solutions for identifying, attracting, and hiring top talent. From job postings and candidate
+                    screening to interviews and onboarding, we ensure that our clients have access to the best
+                    candidates to meet their business needs.
+                </p>
+            </div>
+            <div class="lg:w-1/2 w-full flex justify-center items-center">
+                <img src="https://cdn.pixabay.com/photo/2019/04/16/11/15/job-4131482_960_720.jpg"
+                    alt="Recruitment Services" class="object-cover">
+            </div>
+        </section>
+
+        <!-- Administrative Services -->
+        <section id="administrativeServices"
+            class="w-full mx-auto px-6 sm:px-16 pt-16 sm:py-28 flex flex-col lg:flex-row sm:gap-20 justify-between items-center">
+            <div class="lg:w-1/2 w-full mb-10 lg:mb-0">
+                <h2 class="text-3xl sm:text-5xl text-left font-semibold pb-2 sm:pb-10">Administrative Services
+                </h2>
+                <p class="text-xl sm:text-2xl text-left leading-relaxed sm:leading-loose">
+                    Our services are designed to streamline general office operations and provide comprehensive support,
+                    enabling businesses to focus on their core activities while we handle the essential administrative
+                    tasks. Our team members enhance operational efficiency and effectiveness, providing businesses with
+                    the support they need to thrive in a competitive environment.
+                </p>
+            </div>
+            <div class="lg:w-1/2 w-full flex justify-center items-center mb-10">
+                <img src="https://i.pinimg.com/736x/d7/08/21/d70821c3c0eda0dde493a2d8536f7711.jpg"
+                    alt="Administrative Services" class="object-cover">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
