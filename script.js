@@ -1,25 +1,25 @@
 const showMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId),
-    navLinks = document.querySelectorAll('.nav__link');
+    nav = document.getElementById(navId);
 
-  // Toggle the menu and icon on toggle button click
   toggle.addEventListener('click', () => {
     nav.classList.toggle('show-menu');
-    toggle.classList.toggle('show-icon');
-  });
-
-  // Close the menu when any navigation link is clicked
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('show-menu');
-      toggle.classList.remove('show-icon');
-    });
   });
 };
 
-// Initialize the menu toggle functionality
+const showDropdown = (toggleId, menuId) => {
+  const toggle = document.getElementById(toggleId),
+    menu = document.getElementById(menuId);
+
+  toggle.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent default link behavior
+    menu.classList.toggle('show-dropdown');
+  });
+};
+
 showMenu('nav-toggle', 'nav-menu');
+showDropdown('services-toggle', 'services-menu');
+
 
  // JavaScript to handle truncation
  document.addEventListener("DOMContentLoaded", function () {
