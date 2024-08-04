@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+    <style>
+        /* Tailwind doesn't support multiline ellipsis out of the box, so custom CSS is needed */
+        .truncate-text {
+            display: -webkit-box;
+            -webkit-line-clamp: 5; /* Number of lines to show */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <section id="services" class="container mx-auto md:pt-14 items-center">
+        <div class="text-center pt-20 sm:pt-10">
+            <h2 class="text-3xl sm:text-5xl font-semibold sm:pb-6">Our Services</h2>
+        </div>
+
+        <div class="flex flex-wrap sm:flex-row justify-center gap-4 p-3">
+            <!-- Card 1 -->
+            <div class="w-full sm:w-1/2 lg:w-1/4 p-2">
+                <div class="bg-white shadow-md rounded-lg overflow-hidden transition transform hover:scale-105 duration-300 h-full flex flex-col">
+                    <img src="./assets/img/accounts.png" class="w-full h-48 object-contain" alt="Accounting">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <h5 class="text-xl font-semibold mb-2">Accounting and Finance</h5>
+                        <p class="text-gray-700 truncate-text" id="accounting-text">We offer comprehensive accounting and finance services designed to meet the diverse needs of our clients and enhance their financial stability and growth. Our services are designed to provide robust financial reports enabling businesses to focus on their core operations while we manage their books of accounts and monitor the financials.</p>
+                        <a href="./accounting.html" class="text-blue-500 hover:underline mt-4">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="w-full sm:w-1/2 lg:w-1/4 p-2">
+                <div class="bg-white shadow-md rounded-lg overflow-hidden transition transform hover:scale-105 duration-300 h-full flex flex-col">
+                    <img src="./assets/img/supply-chain.png" class="w-full h-48 object-contain" alt="Supply Chain Management Services">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <h5 class="text-xl font-semibold mb-2">Supply Chain Management</h5>
+                        <p class="text-gray-700 truncate-text" id="scm-text">We optimize the entire supply chain process, from procurement and production to distribution and delivery. Our supply chain management services focus on improving efficiency, reducing costs, and ensuring the seamless flow of goods and information across the supply chain.</p>
+                        <a href="./supplychain.html" class="text-blue-500 hover:underline mt-4">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="w-full sm:w-1/2 lg:w-1/4 p-2">
+                <div class="bg-white shadow-md rounded-lg overflow-hidden transition transform hover:scale-105 duration-300 h-full flex flex-col">
+                    <img src="./assets/img/procurement.png" class="w-full h-48 object-contain" alt="Procurement Services">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <h5 class="text-xl font-semibold mb-2">Procurement Solutions</h5>
+                        <p class="text-gray-700 truncate-text" id="admin-text">Our Administrative Services are designed to streamline operations, optimize logistics, and provide comprehensive support, enabling businesses to focus on their core activities while we handle the essential administrative tasks. Our Administrative Services are designed to enhance operational efficiency and effectiveness, providing businesses with the support they need to thrive in a competitive environment.</p>
+                        <a href="./procurement.html" class="text-blue-500 hover:underline mt-4">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="w-full sm:w-1/2 lg:w-1/4 p-2">
+                <div class="bg-white shadow-md rounded-lg overflow-hidden transition transform hover:scale-105 duration-300 h-full flex flex-col">
+                    <img src="./assets/img/computer.png" class="w-full h-48 object-contain" alt="IT Services">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <h5 class="text-xl font-semibold mb-2">IT and ERP Services</h5>
+                        <p class="text-gray-700 truncate-text" id="it-text">Our IT and ERP services are designed to ensure that businesses have robust, efficient, and secure technology infrastructures. We offer comprehensive solutions that cover all aspects of IT and ERP management to support and enhance your business operations. Our IT and ERP services are designed to provide businesses with the technology support they need to thrive in a digital world. By managing your IT infrastructure and systems, we enable you to focus on your core business activities with confidence.</p>
+                        <a href="./itanderp.html" class="text-blue-500 hover:underline mt-4">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="w-full sm:w-1/2 lg:w-1/4 p-2">
+                <div class="bg-white shadow-md rounded-lg overflow-hidden transition transform hover:scale-105 duration-300 h-full flex flex-col">
+                    <img src="./assets/img/organization-structure.png" class="w-full h-48 object-contain" alt="Human Resource Management">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <h5 class="text-xl font-semibold mb-2">HR and Administrative Services</h5>
+                        <p class="text-gray-700 truncate-text" id="hrm-text">Our Human Resource Management services are tailored to help businesses cultivate a productive and motivated workforce, ensuring operational excellence and employee satisfaction. Our Human Resource Management services are aimed at enhancing workforce efficiency and satisfaction, allowing businesses to focus on their strategic goals while we manage their HR functions with professionalism and expertise.</p>
+                        <a href="./hr&admin.html" class="text-blue-500 hover:underline mt-4">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="w-full sm:w-1/2 lg:w-1/4 p-2">
+                <div class="bg-white shadow-md rounded-lg overflow-hidden transition transform hover:scale-105 duration-300 h-full flex flex-col">
+                    <img src="./assets/img/legal-system.png" class="w-full h-48 object-contain" alt="Compliance">
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <h5 class="text-xl font-semibold mb-2">Legal and Compliance Services</h5>
+                        <p class="text-gray-700 truncate-text" id="compliance-text">Our Legal and Compliance services are designed to help businesses navigate the complex regulatory landscape with confidence and ease. We provide comprehensive solutions to ensure your business meets all legal and compliance requirements, safeguarding your reputation and operations. Our Legal and Compliance services are designed to provide businesses with the expertise and support needed to operate within the legal framework and maintain a positive reputation. By managing your legal and compliance needs, we enable you to focus on your core business activities with peace of mind.</p>
+                        <a href="./legalandcompliance.html" class="text-blue-500 hover:underline mt-4">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const truncateText = (selector, maxLength) => {
+                const elements = document.querySelectorAll(selector);
+                elements.forEach(element => {
+                    const originalText = element.textContent;
+                    if (originalText.length > maxLength) {
+                        const truncatedText = originalText.substring(0, maxLength) + '...';
+                        element.textContent = truncatedText;
+                    }
+                });
+            };
+
+            truncateText('#accounting-text', 200);
+            truncateText('#hrm-text', 200);
+            truncateText('#admin-text', 200);
+            truncateText('#it-text', 200);
+            truncateText('#compliance-text', 200);
+            truncateText('#scm-text', 200);
+        });
+    </script>
+</body>
+</html>
