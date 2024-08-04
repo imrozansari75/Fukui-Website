@@ -717,6 +717,10 @@ h1, h2, h3{
   height: 100%;
 }
 
+.h-auto{
+  height: auto;
+}
+
 .min-h-screen{
   min-height: 100vh;
 }
@@ -1025,6 +1029,14 @@ h1, h2, h3{
   line-height: 1.75rem;
 }
 
+.text-\[18px\]{
+  font-size: 18px;
+}
+
+.text-\[20px\]{
+  font-size: 20px;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -1074,6 +1086,14 @@ h1, h2, h3{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\]{
+  color: ;
+}
+
+.text-\[1\]{
+  color: 1;
 }
 
 .shadow-lg{
@@ -1605,6 +1625,10 @@ a {
     margin-top: 1.5rem;
   }
 
+  .sm\:h-\[32rem\]{
+    height: 32rem;
+  }
+
   .sm\:w-1\/2{
     width: 50%;
   }
@@ -1615,6 +1639,10 @@ a {
 
   .sm\:w-\[9rem\]{
     width: 9rem;
+  }
+
+  .sm\:w-full{
+    width: 100%;
   }
 
   .sm\:flex-row{
@@ -1633,6 +1661,11 @@ a {
     --tw-space-y-reverse: 0;
     margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+  }
+
+  .sm\:object-cover{
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   .sm\:px-10{
@@ -1665,6 +1698,11 @@ a {
     padding-bottom: 2rem;
   }
 
+  .sm\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .sm\:pb-10{
     padding-bottom: 2.5rem;
   }
@@ -1687,6 +1725,10 @@ a {
 
   .sm\:pt-28{
     padding-top: 7rem;
+  }
+
+  .sm\:pb-20{
+    padding-bottom: 5rem;
   }
 
   .sm\:text-center{
@@ -1730,6 +1772,14 @@ a {
 
   .md\:pt-14{
     padding-top: 3.5rem;
+  }
+}
+
+@media (min-width: 640px){
+  @media (min-width: 1024px){
+    .sm\:lg\:w-1\/2{
+      width: 50%;
+    }
   }
 }
 
