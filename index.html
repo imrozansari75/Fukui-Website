@@ -45,11 +45,11 @@
 
                     <!--=============== DROPDOWN ===============-->
                     <li class="dropdown__item">
-                        <a href="#services">
+                        <!-- <a href="#services"> -->
                             <div class="nav__link">
                                 Services <i class="ri-arrow-down-s-line dropdown__arrow"></i>
                             </div>
-                        </a>
+                        <!-- </a> -->
                         <ul class="dropdown__menu sm:w-[12rem]">
                             <li class="dropdown__subitem ">
                                 <a href="./accounting.html">
@@ -129,13 +129,12 @@
         </nav>
     </header>
 
-
     <!-- Main -->
     <main>
         <!-- Hero -->
         <div id="hero" class="min-h-screen py-10">
             <section id="hero-container"
-                class="max-w-6xl mx-auto px-6 pb-2 sm:pb-20 flex flex-col sm:items-center sm:text-center sm:pt-12">
+                class="max-w-6xl mx-auto px-6 pb-2 flex flex-col sm:items-center sm:text-center sm:py-24">
                 <h1
                     class="text-3xl font-semibold leading-snug md:my-auto text-center sm:text-6xl sm:leading-tight text-black">
                     EMPOWERING YOU WITH COMPLETE BUSINESS SUPPORT SOLUTIONS
@@ -156,10 +155,10 @@
 
             <!-- About -->
             <section id="about-container"
-                class="w-full mx-auto px-6 sm:px-16 sm:pt-10 sm:py-28 flex flex-col lg:flex-row sm:gap-20 justify-between items-center">
-                <div class="lg:w-1/2 w-full pt-16 sm:mb-10 lg:mb-0">
-                    <h2 class="text-3xl sm:text-5xl text-left font-semibold pb-6 sm:pb-10">About us</h2>
-                    <p class="text-xl sm:text-2xl text-left leading-relaxed sm:leading-loose">
+                class="mx-auto px-6 sm:px-16 sm:pt-10 sm:py-28 flex flex-col lg:flex-row sm:gap-20 justify-between items-center">
+                <div class="lg:w-1/2 w-full py-16 sm:mb-10 lg:mb-0">
+                    <h2 class="text-3xl sm:text-5xl text-left font-semibold pb-6 sm:pb-4">About us</h2>
+                    <p class="text-xl sm:text-2xl text-left leading-relaxed sm:leading-snug">
                         Fukui Accent Trading (India) Private Limited offers extensive business support services
                         throughout India.
                         Specializing in Accounts & Finance, HR & Administrative support, Procurement, Supply Chain
@@ -171,9 +170,10 @@
                         commitment to delivering tailored solutions that optimize operations and ensure compliance.
                     </p>
                 </div>
-                <div class="lg:w-1/2 sm:w-full ">
-                    <img src="./assets/img/home-about.jpg" alt="About Us"
-                        class="h-[32rem] object-contain sm:object-cover rounded-lg shadow-lg">
+                <div class="max-w-[30rem]">
+                    <div class="aspect-w-4 aspect-h-3">
+                        <img src="./assets/img/home-about.jpg" alt="About Us" class="object-cover rounded-lg shadow-lg">
+                    </div>
                 </div>
             </section>
 
@@ -182,76 +182,117 @@
                 <div class="text-center pt-20 sm:pt-10">
                     <h2 class="text-3xl sm:text-5xl font-semibold sm:pb-6">Our Services</h2>
                 </div>
-        
+
                 <div class="flex flex-wrap sm:flex-row justify-center gap-4 p-3">
                     <!-- Card 1 -->
                     <div class="w-full sm:w-1/2 lg:w-1/4 p-2">
-                        <div class="bg-white shadow-md rounded-lg overflow-hidden transition transform hover:scale-105 duration-300 h-full flex flex-col">
-                            <img src="./assets/img/accounts.png" class="w-full h-48 object-contain" alt="Accounting">
+                        <div
+                            class="bg-white shadow-md rounded-lg overflow-hidden transition transform hover:scale-105 duration-300 h-full flex flex-col">
+                            <img src="./assets/img/accounts.png" class="w-full p-5 h-40 object-contain" alt="Accounting">
                             <div class="p-4 flex-grow flex flex-col justify-between">
                                 <h5 class="text-xl font-semibold mb-2">Accounting and Finance</h5>
-                                <p class="text-gray-700 truncate-text" id="accounting-text">We offer comprehensive accounting and finance services designed to meet the diverse needs of our clients and enhance their financial stability and growth. Our services are designed to provide robust financial reports enabling businesses to focus on their core operations while we manage their books of accounts and monitor the financials.</p>
+                                <p class="text-gray-700 truncate-text" id="accounting-text">We offer comprehensive
+                                    accounting and finance services designed to meet the diverse needs of our clients
+                                    and enhance their financial stability and growth. Our services are designed to
+                                    provide robust financial reports enabling businesses to focus on their core
+                                    operations while we manage their books of accounts and monitor the financials.</p>
                                 <a href="./accounting.html" class="text-blue-500 hover:underline mt-4">Read More</a>
                             </div>
                         </div>
                     </div>
-        
+
                     <!-- Card 2 -->
                     <div class="w-full sm:w-1/2 lg:w-1/4 p-2">
-                        <div class="bg-white shadow-md rounded-lg overflow-hidden transition transform hover:scale-105 duration-300 h-full flex flex-col">
-                            <img src="./assets/img/supply-chain.png" class="w-full h-48 object-contain" alt="Supply Chain Management Services">
+                        <div
+                            class="bg-white shadow-md rounded-lg overflow-hidden transition transform hover:scale-105 duration-300 h-full flex flex-col">
+                            <img src="./assets/img/supply-chain.png" class="w-full p-5 h-40 object-contain"
+                                alt="Supply Chain Management Services">
                             <div class="p-4 flex-grow flex flex-col justify-between">
                                 <h5 class="text-xl font-semibold mb-2">Supply Chain Management</h5>
-                                <p class="text-gray-700 truncate-text" id="scm-text">We optimize the entire supply chain process, from procurement and production to distribution and delivery. Our supply chain management services focus on improving efficiency, reducing costs, and ensuring the seamless flow of goods and information across the supply chain.</p>
+                                <p class="text-gray-700 truncate-text" id="scm-text">We optimize the entire supply chain
+                                    process, from procurement and production to distribution and delivery. Our supply
+                                    chain management services focus on improving efficiency, reducing costs, and
+                                    ensuring the seamless flow of goods and information across the supply chain.</p>
                                 <a href="./supplychain.html" class="text-blue-500 hover:underline mt-4">Read More</a>
                             </div>
                         </div>
                     </div>
-        
+
                     <!-- Card 3 -->
                     <div class="w-full sm:w-1/2 lg:w-1/4 p-2">
-                        <div class="bg-white shadow-md rounded-lg overflow-hidden transition transform hover:scale-105 duration-300 h-full flex flex-col">
-                            <img src="./assets/img/procurement.png" class="w-full h-48 object-contain" alt="Procurement Services">
+                        <div
+                            class="bg-white shadow-md rounded-lg overflow-hidden transition transform hover:scale-105 duration-300 h-full flex flex-col">
+                            <img src="./assets/img/procurement.png" class="w-full p-5 h-40 object-contain"
+                                alt="Procurement Services">
                             <div class="p-4 flex-grow flex flex-col justify-between">
                                 <h5 class="text-xl font-semibold mb-2">Procurement Solutions</h5>
-                                <p class="text-gray-700 truncate-text" id="admin-text">Our Administrative Services are designed to streamline operations, optimize logistics, and provide comprehensive support, enabling businesses to focus on their core activities while we handle the essential administrative tasks. Our Administrative Services are designed to enhance operational efficiency and effectiveness, providing businesses with the support they need to thrive in a competitive environment.</p>
+                                <p class="text-gray-700 truncate-text" id="admin-text">Our Administrative Services are
+                                    designed to streamline operations, optimize logistics, and provide comprehensive
+                                    support, enabling businesses to focus on their core activities while we handle the
+                                    essential administrative tasks. Our Administrative Services are designed to enhance
+                                    operational efficiency and effectiveness, providing businesses with the support they
+                                    need to thrive in a competitive environment.</p>
                                 <a href="./procurement.html" class="text-blue-500 hover:underline mt-4">Read More</a>
                             </div>
                         </div>
                     </div>
-        
+
                     <!-- Card 4 -->
                     <div class="w-full sm:w-1/2 lg:w-1/4 p-2">
-                        <div class="bg-white shadow-md rounded-lg overflow-hidden transition transform hover:scale-105 duration-300 h-full flex flex-col">
-                            <img src="./assets/img/computer.png" class="w-full h-48 object-contain" alt="IT Services">
+                        <div
+                            class="bg-white shadow-md rounded-lg overflow-hidden transition transform hover:scale-105 duration-300 h-full flex flex-col">
+                            <img src="./assets/img/computer.png" class="w-full p-5 h-40 object-contain" alt="IT Services">
                             <div class="p-4 flex-grow flex flex-col justify-between">
                                 <h5 class="text-xl font-semibold mb-2">IT and ERP Services</h5>
-                                <p class="text-gray-700 truncate-text" id="it-text">Our IT and ERP services are designed to ensure that businesses have robust, efficient, and secure technology infrastructures. We offer comprehensive solutions that cover all aspects of IT and ERP management to support and enhance your business operations. Our IT and ERP services are designed to provide businesses with the technology support they need to thrive in a digital world. By managing your IT infrastructure and systems, we enable you to focus on your core business activities with confidence.</p>
+                                <p class="text-gray-700 truncate-text" id="it-text">Our IT and ERP services are designed
+                                    to ensure that businesses have robust, efficient, and secure technology
+                                    infrastructures. We offer comprehensive solutions that cover all aspects of IT and
+                                    ERP management to support and enhance your business operations. Our IT and ERP
+                                    services are designed to provide businesses with the technology support they need to
+                                    thrive in a digital world. By managing your IT infrastructure and systems, we enable
+                                    you to focus on your core business activities with confidence.</p>
                                 <a href="./itanderp.html" class="text-blue-500 hover:underline mt-4">Read More</a>
                             </div>
                         </div>
                     </div>
-        
+
                     <!-- Card 5 -->
                     <div class="w-full sm:w-1/2 lg:w-1/4 p-2">
-                        <div class="bg-white shadow-md rounded-lg overflow-hidden transition transform hover:scale-105 duration-300 h-full flex flex-col">
-                            <img src="./assets/img/organization-structure.png" class="w-full h-48 object-contain" alt="Human Resource Management">
+                        <div
+                            class="bg-white shadow-md rounded-lg overflow-hidden transition transform hover:scale-105 duration-300 h-full flex flex-col">
+                            <img src="./assets/img/organization-structure.png" class="w-full p-5 h-40 object-contain"
+                                alt="HR and Administrative Services">
                             <div class="p-4 flex-grow flex flex-col justify-between">
                                 <h5 class="text-xl font-semibold mb-2">HR and Administrative Services</h5>
-                                <p class="text-gray-700 truncate-text" id="hrm-text">Our Human Resource Management services are tailored to help businesses cultivate a productive and motivated workforce, ensuring operational excellence and employee satisfaction. Our Human Resource Management services are aimed at enhancing workforce efficiency and satisfaction, allowing businesses to focus on their strategic goals while we manage their HR functions with professionalism and expertise.</p>
+                                <p class="text-gray-700 truncate-text" id="hrm-text">Our Human Resource Management
+                                    services are tailored to help businesses cultivate a productive and motivated
+                                    workforce, ensuring operational excellence and employee satisfaction. Our Human
+                                    Resource Management services are aimed at enhancing workforce efficiency and
+                                    satisfaction, allowing businesses to focus on their strategic goals while we manage
+                                    their HR functions with professionalism and expertise.</p>
                                 <a href="./hr&admin.html" class="text-blue-500 hover:underline mt-4">Read More</a>
                             </div>
                         </div>
                     </div>
-        
+
                     <!-- Card 6 -->
                     <div class="w-full sm:w-1/2 lg:w-1/4 p-2">
-                        <div class="bg-white shadow-md rounded-lg overflow-hidden transition transform hover:scale-105 duration-300 h-full flex flex-col">
-                            <img src="./assets/img/legal-system.png" class="w-full h-48 object-contain" alt="Compliance">
+                        <div
+                            class="bg-white shadow-md rounded-lg overflow-hidden transition transform hover:scale-105 duration-300 h-full flex flex-col">
+                            <img src="./assets/img/legal-system.png" class="w-full p-5 h-40 object-contain"
+                                alt="Compliance">
                             <div class="p-4 flex-grow flex flex-col justify-between">
                                 <h5 class="text-xl font-semibold mb-2">Legal and Compliance Services</h5>
-                                <p class="text-gray-700 truncate-text" id="compliance-text">Our Legal and Compliance services are designed to help businesses navigate the complex regulatory landscape with confidence and ease. We provide comprehensive solutions to ensure your business meets all legal and compliance requirements, safeguarding your reputation and operations. Our Legal and Compliance services are designed to provide businesses with the expertise and support needed to operate within the legal framework and maintain a positive reputation. By managing your legal and compliance needs, we enable you to focus on your core business activities with peace of mind.</p>
-                                <a href="./legalandcompliance.html" class="text-blue-500 hover:underline mt-4">Read More</a>
+                                <p class="text-gray-700 truncate-text" id="compliance-text">Our Legal and Compliance
+                                    services are designed to help businesses navigate the complex regulatory landscape
+                                    with confidence and ease. We provide comprehensive solutions to ensure your business
+                                    meets all legal and compliance requirements, safeguarding your reputation and
+                                    operations. Our Legal and Compliance services are designed to provide businesses
+                                    with the expertise and support needed to operate within the legal framework and
+                                    maintain a positive reputation. By managing your legal and compliance needs, we
+                                    enable you to focus on your core business activities with peace of mind.</p>
+                                <a href="./legalandcompliance.html" class="text-blue-500 hover:underline mt-4">Read
+                                    More</a>
                             </div>
                         </div>
                     </div>
@@ -270,77 +311,8 @@
                 </div>
 
                 <!-- Card 1 -->
-                <!-- Manager - Accounts and Taxation -->
-                <div class="career-card-container">
-                    <div class="career-card" onclick="toggleCard(this)">
-                        <div class="career-card__header">
-                            <div class="career-card__icon">
-                                <i class="fas fa-briefcase fa-2x text-blue-500"></i>
-                            </div>
-                            <h2 class="career-card__title text-lg font-bold">Manager - Accounts and Taxation</h2>
-                        </div>
-                    </div>
-                    <div class="career-card__content">
-                        <h3 class="text-lg font-bold">Key Requirements</h3>
-                        <p>
-                        <ul class="list-disc list-inside">
-                            <li>Proficiency in Indian Accounting Standards (Ind AS) and accounts finalization.</li>
-                            <li>Experience in quarterly reporting for listed entities.</li>
-                            <li>Skilled in MIS reporting for strategic insights.</li>
-                            <li>Advanced in Microsoft Excel, Word, and PowerPoint.</li>
-                            <li>Knowledgeable in Direct Taxation and Income Tax Return filing.</li>
-                            <li>Handling of statutory and tax audits with meticulous documentation.</li>
-                        </ul>
-                        </p>
-                        <h3 class="text-lg font-bold">Qualifications</h3>
-                        <p>Qualified CA with 5-10 years of experience</p>
-                        <h3 class="text-lg font-bold">Location</h3>
-                        <p>Nariman Point, Mumbai</p>
-                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-2 mb-2 rounded"
-                            onclick="sendEmail()">Apply Now</button>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <!-- Assistant Manager - Accounts and Taxation -->
-                <div class="career-card-container">
-                    <div class="career-card" onclick="toggleCard(this)">
-                        <div class="career-card__header">
-                            <div class="career-card__icon text-blue-500">
-                                <i class="fas fa-file-invoice fa-2x text-blue-500"></i>
-                            </div>
-                            <h2 class="career-card__title text-lg font-bold">Assistant Manager - Accounts and
-                                Taxation
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="career-card__content">
-                        <h3 class="text-lg font-bold">Key Requirements</h3>
-                        <p>
-                        <ul class="list-disc list-inside">
-                            <li>Monthly scrutiny and closure of accounts</li>
-                            <li>Periodical reconciliation of ledgers and balance confirmation</li>
-                            <li>Timely and accurate preparation and presentation / submission of financial
-                                statements,
-                                timely preparation,
-                                analysis, and reporting of MIS to the management</li>
-                            <li>Experience in Indian Accounting Standards (Ind AS) and accounts finalization for
-                                listed
-                                entity</li>
-                        </ul>
-                        </p>
-                        <h3 class="text-lg font-bold">Qualifications</h3>
-                        <p>CA Intermediate/ICWA/ BAF/ MBA in Finance with 2-4 years of experience</p>
-                        <h3 class="text-lg font-bold">Location</h3>
-                        <p>Nariman Point, Mumbai</p>
-                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-2 mb-2 rounded"
-                            onclick="sendEmail()">Apply Now</button>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
                 <!-- Taxation Executive -->
-                <div class="career-card-container">
+                <div id="taxationExecutive" class="career-card-container">
                     <div class="career-card" onclick="toggleCard(this)">
                         <div class="career-card__header">
                             <div class="career-card__icon text-blue-500">
@@ -371,9 +343,9 @@
                     </div>
                 </div>
 
-                <!-- Card 6 -->
+                <!-- Card 2 -->
                 <!-- IT Senior Executive -->
-                <div class="career-card-container">
+                <div id="seniorExecutiveIT" class="career-card-container">
                     <div class="career-card" onclick="toggleCard(this)">
                         <div class="career-card__header">
                             <div class="career-card__icon text-blue-500">
@@ -400,11 +372,9 @@
                     </div>
                 </div>
 
-
-
-                <!-- Card 5 -->
+                <!-- Card 3 -->
                 <!-- Digital Marketing Executive -->
-                <div class="career-card-container">
+                <div id="digitalMarketExecutive" class="career-card-container">
                     <div class="career-card" onclick="toggleCard(this)">
                         <div class="career-card__header">
                             <div class="career-card__icon text-blue-500">
@@ -435,7 +405,7 @@
 
                 <!-- Card 4 -->
                 <!-- GST Executive -->
-                <div class="career-card-container">
+                <div excutiveGST class="career-card-container">
                     <div class="career-card" onclick="toggleCard(this)">
                         <div class="career-card__header">
                             <div class="career-card__icon text-blue-500">
@@ -466,38 +436,9 @@
                     </div>
                 </div>
 
-                <!-- Card 7 -->
-                <!-- Assistant Manager - GST -->
-                <div class="career-card-container">
-                    <div class="career-card" onclick="toggleCard(this)">
-                        <div class="career-card__header">
-                            <div class="career-card__icon text-blue-500">
-                                <i class="fas fa-chart-line fa-2x text-blue-500"></i>
-                            </div>
-                            <h2 class="career-card__title text-lg font-bold">Assistant Manager - GST</h2>
-                        </div>
-                    </div>
-                    <div class="career-card__content">
-                        <h3 class="text-lg font-bold">Key Requirements</h3>
-                        <p>
-                        <ul class="list-disc list-inside">
-                            <li>Assist with GST compliance, including preparing and filing returns.</li>
-                            <li>Review and maintain GST records and reports.</li>
-                            <li>Support audits and handle GST-related queries.</li>
-                        </ul>
-                        </p>
-                        <h3 class="text-lg font-bold">Qualifications</h3>
-                        <p>BCom or equivalent with 3-5 years of GST experience</p>
-                        <h3 class="text-lg font-bold">Location</h3>
-                        <p>Nariman Point, Mumbai</p>
-                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-2 mt-2 rounded"
-                            onclick="sendEmail()">Apply Now</button>
-                    </div>
-                </div>
-
-                <!-- Card 8 -->
+                <!-- Card 5 -->
                 <!-- Manager - GST -->
-                <div class="career-card-container">
+                <div id="managerGST" class="career-card-container">
                     <div class="career-card" onclick="toggleCard(this)">
                         <div class="career-card__header">
                             <div class="career-card__icon text-blue-500">
@@ -573,17 +514,10 @@
     <!------Footer Section------->
     <footer
         class="bg-gradient-to-r from-blue-800 via-blue-900 to-blue-800 text-white py-10 px-6 lg:px-0 mt-10 border-t border-gray-600">
-        <div class="container mx-auto flex flex-col items-center lg:flex-row lg:items-start justify-between">
-            <!-- About Us Section -->
-            <!-- <div class="flex flex-col mb-6 lg:mb-0 text-center lg:text-left">
-                <h3 class="text-white text-2xl font-semibold pb-4">About Us</h3>
-                <a href="#" class="text-gray-300 hover:text-white mb-2 transition-colors duration-300">Why Fukui</a>
-                <a href="#" class="text-gray-300 hover:text-white mb-2 transition-colors duration-300">Culture</a>
-                <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">Vision</a>
-            </div> -->
+        <div class="container mx-auto flex flex-col lg:flex-row text-left lg:items-start justify-between">
 
             <!-- Services Section -->
-            <div class="flex flex-col mb-6 lg:mb-0 text-center lg:text-left">
+            <div class="flex flex-col mb-6 lg:mb-0 lg:text-left">
                 <h3 class="text-white text-2xl font-semibold pb-4">Services</h3>
                 <a href="./accounting.html"
                     class="text-gray-300 hover:text-white mb-2 transition-colors duration-300">Accounting &
@@ -604,10 +538,27 @@
                     Services</a>
             </div>
 
+            <!-- Career Section -->
+            <div class="flex flex-col mb-6 lg:mb-0 text-left">
+                <h3 class="text-white text-2xl font-semibold pb-4">Careers</h3>
+                <a href="#managerAccountTaxation"
+                    class="text-gray-300 hover:text-white mb-2 transition-colors duration-300">Manager - Accounts and Taxation</a>
+                <a href="#assistManagerAccountTax"
+                    class="text-gray-300 hover:text-white mb-2 transition-colors duration-300">Assistant Manager - Accounts and Taxation</a>
+                <a href="#taxationExecutive"
+                    class="text-gray-300 hover:text-white mb-2 transition-colors duration-300">Executive - Taxation</a>
+                <a href="#seniorExecutiveIT" class="text-gray-300 hover:text-white mb-2 transition-colors duration-300">Senior Executive - IT</a>
+                <a href="#digitalMarketExecutive" class="text-gray-300 hover:text-white mb-2 transition-colors duration-300">Executive - Digital Marketing</a>
+                <a href="#excutiveGST" class="text-gray-300 hover:text-white transition-colors duration-300">Executive - GST</a>
+                <a href="#assistManagerGST" class="text-gray-300 hover:text-white mb-2 transition-colors duration-300">Assistant Manager - GST</a>
+                <a href="#managerGST" class="text-gray-300 hover:text-white transition-colors duration-300">
+                    Manager - GST</a>
+            </div>
+
             <!-- Contact Us Section -->
-            <div class="flex flex-col mb-6 lg:mb-0 text-center lg:text-left">
+            <div class="flex flex-col mb-6 lg:mb-0 text-left">
                 <h3 class="text-white text-2xl font-semibold pb-4">Contact Us</h3>
-                <div class="flex flex-col items-center lg:items-start mb-4">
+                <div class="flex flex-col text-left lg:items-start mb-4">
                     <div class="flex items-center footer-btn">
                         <i class="fa-solid fa-location-dot text-xl"></i>
                         <span class="pl-2">144A, Mittal Tower, Nariman Point, Mumbai 400021</span>
@@ -642,42 +593,3 @@
 </body>
 
 </html>
-
-<!-- Form -->
-<!-- <div
-                    class="w-full lg:w-1/2 max-w-lg mx-auto bg-gradient-to-r from-blue-800 via-blue-900 to-blue-800 p-8 rounded-lg shadow-lg">
-                    <form>
-                        <h2 class="text-white font-semibold text-center text-3xl mb-6">Send us a Message</h2>
-
-                        <div class="mb-4">
-                            <label for="name" class="block text-white mb-2">Name</label>
-                            <input type="text" id="name" name="name"
-                                class="w-full p-3 border border-sky-100 rounded-md text-gray-700 outline-none focus:ring-2 focus:ring-blue-500"
-                                placeholder="Enter your name">
-                        </div>
-
-                        <div class="mb-4">
-                            <label for="email" class="block text-white mb-2">Email</label>
-                            <input type="email" id="email" name="email"
-                                class="w-full p-3 border border-sky-100 rounded-md text-gray-700 outline-none focus:ring-2 focus:ring-blue-500"
-                                placeholder="Enter your email">
-                        </div>
-
-                        <div class="mb-4">
-                            <label for="phone_number" class="block text-white mb-2">Mobile</label>
-                            <input type="text" id="phone_number" name="phone_number"
-                                class="w-full p-3 border border-sky-100 rounded-md text-gray-700 outline-none focus:ring-2 focus:ring-blue-500"
-                                placeholder="Mobile Number">
-                        </div>
-
-                        <div class="mb-4">
-                            <label for="message" class="block text-white mb-2">Message</label>
-                            <textarea id="message" name="message"
-                                class="w-full p-3 border border-sky-100 rounded-md text-gray-700 outline-none focus:ring-2 focus:ring-blue-500"
-                                rows="3" placeholder="Message"></textarea>
-                        </div>
-
-                        <button type="submit"
-                            class="w-full bg-white text-blue-900 font-semibold py-3 rounded-md transition duration-300 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500">Send</button>
-                    </form>
-                </div> -->

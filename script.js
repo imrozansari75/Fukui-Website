@@ -1,63 +1,27 @@
-// const showMenu = (toggleId, navId) => {
-//   const toggle = document.getElementById(toggleId),
-//     nav = document.getElementById(navId)
-
-//   toggle.addEventListener('click', () => {
-//     // Add show-menu class to nav menu
-//     nav.classList.toggle('show-menu')
-
-//     // Add show-icon to show and hide the menu icon
-//     toggle.classList.toggle('show-icon')
-//   })
-// }
-
-// showMenu('nav-toggle', 'nav-menu')
-
-// const showMenu = (toggleId, navId) => {
-//   const toggle = document.getElementById(toggleId),
-//     nav = document.getElementById(navId),
-//     navLinks = document.querySelectorAll('.nav__link');
-
-//   // Toggle the menu and icon on toggle button click
-//   toggle.addEventListener('click', () => {
-//     nav.classList.toggle('show-menu');
-//     toggle.classList.toggle('show-icon');
-//   });
-
-//   // Close the menu when any navigation link is clicked
-//   navLinks.forEach(link => {
-//     link.addEventListener('click', () => {
-//       nav.classList.remove('show-menu');
-//       toggle.classList.remove('show-icon');
-//     });
-//   });
-// };
-
+// Function to toggle the menu visibility
 const showMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId);
+        nav = document.getElementById(navId);
 
   toggle.addEventListener('click', () => {
     nav.classList.toggle('show-menu');
   });
 };
 
-const showDropdown = (toggleId, menuId) => {
-  const toggle = document.getElementById(toggleId),
-    menu = document.getElementById(menuId);
+const hideMenuOnLinkClick = (navId) => {
+  const nav = document.getElementById(navId),
+        links = nav.querySelectorAll('a');
 
-  toggle.addEventListener('click', (event) => {
-    event.preventDefault(); // Prevent default link behavior
-    menu.classList.toggle('show-dropdown');
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('show-menu'); 
+    });
   });
 };
 
-showMenu('nav-toggle', 'nav-menu');
-showDropdown('services-toggle', 'services-menu');
 
-
-// Initialize the menu toggle functionality
 showMenu('nav-toggle', 'nav-menu');
+hideMenuOnLinkClick('nav-menu');
 
 
 // JavaScript to handle truncation
