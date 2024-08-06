@@ -1,27 +1,55 @@
-// Function to toggle the menu visibility
 const showMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId),
-        nav = document.getElementById(navId);
+        nav = document.getElementById(navId),
+        burgerIcon = toggle.querySelector('.ri-menu-fill'),
+        closeIcon = toggle.querySelector('.ri-close-line');
 
   toggle.addEventListener('click', () => {
     nav.classList.toggle('show-menu');
+
+    // Toggle between the burger and close icon
+    burgerIcon.classList.toggle('hidden');
+    closeIcon.classList.toggle('hidden');
   });
-};
 
-const hideMenuOnLinkClick = (navId) => {
-  const nav = document.getElementById(navId),
-        links = nav.querySelectorAll('a');
-
-  links.forEach(link => {
+  // Add event listener to close menu when clicking on other nav links
+  const navLinks = nav.querySelectorAll('a:not(#services-toggle)');
+  navLinks.forEach(link => {
     link.addEventListener('click', () => {
-      nav.classList.remove('show-menu'); 
+      nav.classList.remove('show-menu');
+      burgerIcon.classList.remove('hidden');
+      closeIcon.classList.add('hidden');
     });
   });
 };
 
+const showDropdown = (toggleId, menuId) => {
+  const toggle = document.getElementById(toggleId),
+        menu = document.getElementById(menuId);
 
+  toggle.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent default link behavior
+    menu.classList.toggle('show-dropdown');
+  });
+};
+
+// Initialize the menu toggle functionality
 showMenu('nav-toggle', 'nav-menu');
-hideMenuOnLinkClick('nav-menu');
+showDropdown('services-toggle', 'services-menu');
+
+// Optional: Close the menu when clicking outside of it
+document.addEventListener('click', (event) => {
+  const navMenu = document.getElementById('nav-menu');
+  const navToggle = document.getElementById('nav-toggle');
+  const servicesMenu = document.getElementById('services-menu');
+  
+  if (!navMenu.contains(event.target) && !navToggle.contains(event.target) && !servicesMenu.contains(event.target)) {
+    navMenu.classList.remove('show-menu');
+    document.querySelector('.ri-menu-fill').classList.remove('hidden');
+    document.querySelector('.ri-close-line').classList.add('hidden');
+  }
+});
+
 
 
 // JavaScript to handle truncation
