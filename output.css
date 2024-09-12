@@ -805,6 +805,12 @@ h1, h2, h3{
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-1 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
 .space-y-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -892,11 +898,6 @@ h1, h2, h3{
   padding-right: 2.5rem;
 }
 
-.px-3{
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -933,10 +934,6 @@ h1, h2, h3{
 
 .pb-20{
   padding-bottom: 5rem;
-}
-
-.pb-3{
-  padding-bottom: 0.75rem;
 }
 
 .pb-4{
@@ -1086,6 +1083,10 @@ h1, h2, h3{
 
 .duration-300{
   transition-duration: 300ms;
+}
+
+.ease-in-out{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*=============== GOOGLE FONTS ===============*/
@@ -1603,11 +1604,6 @@ a {
     margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
   }
 
-  .sm\:px-10{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
   .sm\:px-16{
     padding-left: 4rem;
     padding-right: 4rem;
@@ -1660,10 +1656,6 @@ a {
 
   .sm\:pt-12{
     padding-top: 3rem;
-  }
-
-  .sm\:pt-20{
-    padding-top: 5rem;
   }
 
   .sm\:pt-28{
