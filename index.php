@@ -168,7 +168,7 @@ $result = mysqli_query($connect, $sql);
                 <div class="lg:w-1/2 w-full py-16 sm:mb-10 lg:mb-0">
                     <h2 class="text-3xl sm:text-5xl text-left font-semibold pb-6 sm:pb-4">About us</h2>
                     <p class="text-xl sm:text-2xl text-left leading-relaxed sm:leading-snug">
-                        FAI Accent Trading (India) Private Limited offers extensive business support services
+                        FAI Corporate Services Private Limited offers extensive business support services
                         throughout India. Specializing in Accounts & Finance, HR & Administrative support, Procurement,
                         Supply Chain Management, IT & ERP services, and Legal & Compliance, collaborating with FAI
                         allows you to focus on your core business competencies. Our tagline, 'Empowering Growth,
@@ -809,7 +809,7 @@ $result = mysqli_query($connect, $sql);
                     <div class="w-40 text-center">
                         <img src="./assets/img/Atlas Protective Products.png" alt="Atlas Protective Products Logo"
                             class="object-cover">
-                        <h3>Accent Industries Limited</h3>
+                        <h3>Atlas Protective Products</h3>
                     </div>
 
                     <div class="w-40 text-center">
