@@ -21,7 +21,7 @@ $result = mysqli_query($connect, $sql);
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Tailwind -->
     <link rel="stylesheet" href="output.css">
-    <title>Fukui</title>
+    <title>FAI</title>
     <style>
         html {
             scroll-behavior: smooth;
@@ -148,7 +148,7 @@ $result = mysqli_query($connect, $sql);
                     class="text-3xl font-semibold leading-snug md:my-auto text-center sm:text-6xl sm:leading-tight text-black">
                     EMPOWERING YOU WITH COMPLETE BUSINESS SUPPORT SOLUTIONS
                 </h1>
-                <p class="text-xl mt-4 sm:px-8 sm:text-2xl text-center sm:mt-6 text-gray-800">At Fukui, we offer
+                <p class="text-xl mt-4 sm:px-8 sm:text-2xl text-center sm:mt-6 text-gray-800">At FAI, we offer
                     comprehensive
                     business support services which enables you to focus entirely on your core business activities,
                     while you let us manage the other complexities of running a business in India.
@@ -168,9 +168,9 @@ $result = mysqli_query($connect, $sql);
                 <div class="lg:w-1/2 w-full py-16 sm:mb-10 lg:mb-0">
                     <h2 class="text-3xl sm:text-5xl text-left font-semibold pb-6 sm:pb-4">About us</h2>
                     <p class="text-xl sm:text-2xl text-left leading-relaxed sm:leading-snug">
-                        Fukui Accent Trading (India) Private Limited offers extensive business support services
+                        FAI Accent Trading (India) Private Limited offers extensive business support services
                         throughout India. Specializing in Accounts & Finance, HR & Administrative support, Procurement,
-                        Supply Chain Management, IT & ERP services, and Legal & Compliance, collaborating with Fukui
+                        Supply Chain Management, IT & ERP services, and Legal & Compliance, collaborating with FAI
                         allows you to focus on your core business competencies. Our tagline, 'Empowering Growth,
                         Enabling Success: Innovate, Collaborate, Excel,' reflects our commitment to delivering tailored
                         solutions that optimize operations and ensure compliance. <br>
@@ -316,7 +316,7 @@ $result = mysqli_query($connect, $sql);
                     <h2 class="text-3xl sm:text-5xl font-semibold">Career Opportunities</h2>
                     <p class="text-xl sm:text-2xl text-left py-5 sm:px-36 sm:py-8">Discover great career opportunities
                         at
-                        Fukui! We're seeking talented, honest, and ambitious individuals to join our brilliant team and
+                        FAI! We're seeking talented, honest, and ambitious individuals to join our brilliant team and
                         drive innovation. Contact us at <b class="text-blue-900">talent@texbrex.com </b> to apply</p>
                 </div>
 
