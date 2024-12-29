@@ -36,7 +36,7 @@ $result = mysqli_query($connect, $sql);
         <nav class="nav container">
             <div class="nav__data">
                 <a href="./index.php" class="nav__logo">
-                    <img class="w-[8rem] sm:w-[9rem]" src="./assets/img/FATIPL Logo - Visheshh Jatiaa.jpg" alt="">
+                    <img class="w-[8rem] sm:w-[9rem]" src="./assets/img/FATIPL Logo - Visheshh Jatiaa.png" alt="">
                 </a>
 
                 <div class="nav__toggle" id="nav-toggle">
@@ -148,7 +148,7 @@ $result = mysqli_query($connect, $sql);
                     class="text-3xl font-semibold leading-snug md:my-auto text-center sm:text-6xl sm:leading-tight text-black">
                     EMPOWERING YOU WITH COMPLETE BUSINESS SUPPORT SOLUTIONS
                 </h1>
-                <p class="text-xl mt-4 sm:px-8 sm:text-2xl text-center sm:mt-6 text-gray-800">At FAI, we offer
+                <p class="text-xl mt-4 sm:px-8 sm:text-2xl text-center sm:mt-6 text-gray-800">At FAI Corporate Services Private Limited, we offer
                     comprehensive
                     business support services which enables you to focus entirely on your core business activities,
                     while you let us manage the other complexities of running a business in India.
